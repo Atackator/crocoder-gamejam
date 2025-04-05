@@ -32,6 +32,5 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = movementDirection * movementSpeed;
-
     }
 }
