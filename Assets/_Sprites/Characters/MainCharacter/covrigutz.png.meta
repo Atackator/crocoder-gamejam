@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 19d3279989ba24e4581f321b577c5959
+guid: 6375a92964c82524bbdafabc1c74d1d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8199988289373833225
-    second: p4_run_0
+      213: 5118715022577674446
+    second: covrigutz_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +96,93 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: p4_run_0
+      name: covrigutz_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 55
-        height: 62
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7f77281a81ac33e80800000000000000
-      internalID: -8199988289373833225
+      spriteID: ffd735265496d444e900ae32b9d5219d
+      internalID: 291708987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: covrigutz_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c81f386db5f6584c93520061582b0d0
+      internalID: 1146373112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: covrigutz_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c82b8131e9aaa4683fc995b8306c45
+      internalID: 1156955537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: covrigutz_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d878097c568f949b87dda4520f3c74
+      internalID: 1141020643
       vertices: []
       indices: 
       edges: []
@@ -138,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c83e419188be06145af82ae0bb3b8da2
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +201,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      p4_run_0: -8199988289373833225
+      covrigutz_0: 291708987
+      covrigutz_1: 1146373112
+      covrigutz_2: 1156955537
+      covrigutz_3: 1141020643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
