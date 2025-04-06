@@ -1233,7 +1233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e999f65fc668c4ea9e843b3ae84ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   distance: 0
   feetYOffset: 0.32
 --- !u!114 &453188531
@@ -1248,7 +1248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a705b0d7fedebda4b97e5e55ae7cbb5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 5
 --- !u!1 &454747789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,9 +1486,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2162246510900288358, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
+      propertyPath: attackRange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162246510900288358, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
       propertyPath: attackSound
       value: 
       objectReference: {fileID: 8300000, guid: 2e3cfd8a4cd1afe40b6ddda869151d13, type: 3}
+    - target: {fileID: 2162246510900288358, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
+      propertyPath: attackDamage
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4608789754659826386, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
       propertyPath: m_Name
       value: Player
