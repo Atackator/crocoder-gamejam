@@ -609,6 +609,7 @@ GameObject:
   - component: {fileID: 453188527}
   - component: {fileID: 453188528}
   - component: {fileID: 453188529}
+  - component: {fileID: 453188530}
   m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
@@ -660,7 +661,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300014, guid: c3a0ffcab94f86043aa02beca70d680b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -680,8 +681,8 @@ Transform:
   m_GameObject: {fileID: 453188524}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.014, y: -0.776, z: 0}
-  m_LocalScale: {x: 0.3205, y: 0.6495, z: 1}
+  m_LocalPosition: {x: 1.0505, y: -0.789, z: 0}
+  m_LocalScale: {x: 0.54866016, y: 0.73042774, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -733,17 +734,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00041788816, y: -0.029070765}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.34668726, y: 0.23894101}
   m_EdgeRadius: 0
 --- !u!50 &453188529
 Rigidbody2D:
@@ -771,7 +772,21 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &453188530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453188524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e999f65fc668c4ea9e843b3ae84ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  distance: 0
 --- !u!1 &454747789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4608789754659826386, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 8704648180991474984, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1054,14 +1073,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8704648180991474984, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1679007024}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4608789754659826386, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1377044530}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
 --- !u!1 &519420028
 GameObject:
@@ -11874,35 +11887,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1377044522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4608789754659826386, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
-  m_PrefabInstance: {fileID: 514809213}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1377044524 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4754919346919049976, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
-  m_PrefabInstance: {fileID: 514809213}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1377044530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377044522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 514e32224585ff5499a17a06b1318e49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1377044524}
-  attackPoint: {fileID: 1679007024}
-  attackRange: 0.5
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  attackDamage: 40
 --- !u!1 &1382427515
 GameObject:
   m_ObjectHideFlags: 0
@@ -11978,37 +11962,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382427515}
   m_CullTransparentMesh: 1
---- !u!1 &1679007023
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1679007024}
-  m_Layer: 0
-  m_Name: AttackPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1679007024
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679007023}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.207, y: 0.008, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 681970952}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1684161914
 GameObject:
   m_ObjectHideFlags: 0
