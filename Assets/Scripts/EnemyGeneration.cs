@@ -3,14 +3,14 @@
 public class EnemySpawner : MonoBehaviour
 {
     public int numberOfEnemies = 15;  // Numărul de inamici de generat
-    public Vector2 spawnAreaMin = new Vector2(-20, -20);  // Limita minimă a zonei de spawn
-    public Vector2 spawnAreaMax = new Vector2(20, 20);    // Limita maximă a zonei de spawn
+    public Vector2 spawnAreaMin = new Vector2(-55, -55);  // Limita minimă a zonei de spawn
+    public Vector2 spawnAreaMax = new Vector2(15, 15);    // Limita maximă a zonei de spawn
     public GameObject enemyPrefab;  // Prefabul inamicilor
 
     void Start()
     {
         // Începe generarea inamicilor la fiecare 5 secunde
-        InvokeRepeating("SpawnEnemy", 0f, 5f); // Se va apela la fiecare 5 secunde
+        InvokeRepeating("SpawnEnemy", 0f, 3f); // Se va apela la fiecare 5 secunde
     }
 
     void SpawnEnemy()
