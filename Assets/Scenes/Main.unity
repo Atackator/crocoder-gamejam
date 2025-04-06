@@ -2730,11 +2730,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f8ca94aadf648e4bb3de8014608934c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfEnemies: 35
+  maxNumberOfEnemies: 200
   spawnAreaMin: {x: -5, y: -5}
   spawnAreaMax: {x: 5, y: 5}
   enemyPrefab: {fileID: 453188524}
-  timer: 3
+  timer: 0.5
 --- !u!4 &1185001474
 Transform:
   m_ObjectHideFlags: 0

@@ -2,7 +2,8 @@
 
 public class EnemySpawner : MonoBehaviour
 {
-    public int numberOfEnemies = 15;  // Numărul de inamici de generat
+    private int numberOfEnemies = 0;  // Numărul de inamici de generat
+    public int maxNumberOfEnemies = 200;
     public Vector2 spawnAreaMin = new Vector2(-55, -55);  // Limita minimă a zonei de spawn
     public Vector2 spawnAreaMax = new Vector2(15, 15);    // Limita maximă a zonei de spawn
     public GameObject enemyPrefab;  // Prefabul inamicilor
@@ -25,8 +26,8 @@ public class EnemySpawner : MonoBehaviour
         Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
 
         // Dacă ai nevoie să oprești generarea după un anumit număr de inamici, folosește un contor:
-        numberOfEnemies--;
-        if (numberOfEnemies <= 0)
+        numberOfEnemies++;
+        if (numberOfEnemies > maxNumberOfEnemies)
         {
             CancelInvoke("SpawnEnemy"); // Oprește generarea când nu mai sunt inamici de creat
         }
