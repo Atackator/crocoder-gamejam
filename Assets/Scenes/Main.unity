@@ -562,6 +562,7 @@ GameObject:
   - component: {fileID: 453188528}
   - component: {fileID: 453188529}
   - component: {fileID: 453188530}
+  - component: {fileID: 453188531}
   m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
@@ -739,6 +740,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   distance: 0
+  feetYOffset: 0.32
+--- !u!114 &453188531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453188524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a705b0d7fedebda4b97e5e55ae7cbb5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
 --- !u!1 &454747789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,6 +1048,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4608789754659826386, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1377044530}
+    - targetCorrespondingSourceObject: {fileID: 4608789754659826386, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1377044536}
   m_SourcePrefab: {fileID: 100100000, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
 --- !u!1 &519420028
 GameObject:
@@ -11874,6 +11892,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   attackDamage: 40
+--- !u!114 &1377044536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377044522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dad4e61743e98d42b68fb54c2d463c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthBar: {fileID: 0}
 --- !u!1 &1382427515
 GameObject:
   m_ObjectHideFlags: 0
