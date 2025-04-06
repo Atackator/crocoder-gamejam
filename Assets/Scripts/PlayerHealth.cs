@@ -26,6 +26,9 @@
 //     }
 // }
 
+
+
+
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -55,3 +58,38 @@ public class PlayerHealth : MonoBehaviour
         // Add death animation or restart logic here
     }
 }
+
+
+
+// using UnityEngine;
+
+// public class PlayerHealth : MonoBehaviour
+// {
+//     public int maxHealth = 100;
+//     private int currentHealth;
+
+//     public HealthBar healthBar;
+
+//     void Start()
+//     {
+//         currentHealth = maxHealth;
+//         healthBar.SetMaxHealth(maxHealth);
+//     }
+
+//     public void TakeDamage(int damage)
+//     {
+//         currentHealth -= damage;
+//         healthBar.SetHealth(currentHealth);
+
+//         if (currentHealth <= 0)
+//         {
+//             Die();
+//         }
+//     }
+
+//     void Die()
+//     {
+//         Debug.Log("Player died!");
+//         // Handle death (animation, respawn, etc.)
+//     }
+// }
