@@ -2,11 +2,17 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public AudioClip attackSound;
+    private AudioSource audioSource;
     public Animator animator;
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayer;
 
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public int attackDamage = 40;
     // Update is called once per frame
     void Update()
@@ -41,6 +47,7 @@ public class PlayerAttack : MonoBehaviour
                 Debug.LogWarning("Enemy script missing on " + enemy.name);
             }
         }
+        audioSource.PlayOneShot(attackSound);
 
     }
 
