@@ -562,7 +562,6 @@ GameObject:
   - component: {fileID: 453188528}
   - component: {fileID: 453188529}
   - component: {fileID: 453188530}
-  - component: {fileID: 453188531}
   m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
@@ -634,7 +633,7 @@ Transform:
   m_GameObject: {fileID: 453188524}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0505, y: -0.789, z: 0}
+  m_LocalPosition: {x: 11.47, y: -7.53, z: 0}
   m_LocalScale: {x: 0.54866016, y: 0.73042774, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -740,22 +739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   distance: 0
---- !u!114 &453188531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453188524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f8ca94aadf648e4bb3de8014608934c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberOfEnemies: 15
-  spawnAreaMin: {x: -20, y: -20}
-  spawnAreaMax: {x: 20, y: 20}
-  enemyPrefab: {fileID: 453188524}
+  feetYOffset: 0.32
 --- !u!1 &454747789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,7 +990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8704648180991474984, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8
+      value: -1.005
       objectReference: {fileID: 0}
     - target: {fileID: 8704648180991474984, guid: b182a53d5a88a714f82e96d7720527ca, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1177,7 +1161,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.8, z: -10}
+  m_LocalPosition: {x: 0, y: -1.005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2057,6 +2041,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097225383}
   m_CullTransparentMesh: 1
+--- !u!1 &1185001472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1185001474}
+  - component: {fileID: 1185001473}
+  m_Layer: 0
+  m_Name: Spawner_Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1185001473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185001472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8ca94aadf648e4bb3de8014608934c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfEnemies: 35
+  spawnAreaMin: {x: -5, y: -5}
+  spawnAreaMax: {x: 5, y: 5}
+  enemyPrefab: {fileID: 453188524}
+  timer: 3
+--- !u!4 &1185001474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185001472}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1219487883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,7 +2632,7 @@ Transform:
   m_GameObject: {fileID: 1315523754}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.8, z: -10}
+  m_LocalPosition: {x: 0, y: -1.005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2858,6 +2891,14 @@ CompositeCollider2D:
         Y: -90000000
       - X: 50000000
         Y: -100000000
+    - - X: 120000000
+        Y: -70000000
+      - X: 110000000
+        Y: -70000000
+      - X: 110000000
+        Y: -80000000
+      - X: 120000000
+        Y: -80000000
   m_CompositePaths:
     m_Paths:
     - - {x: 5.999971, y: -11}
@@ -2948,6 +2989,10 @@ CompositeCollider2D:
       - {x: 6, y: -8.00003}
       - {x: 5.9999704, y: -9}
       - {x: 5, y: -9.00003}
+    - - {x: 11.99997, y: -8}
+      - {x: 11.99997, y: -7}
+      - {x: 11, y: -7.0000296}
+      - {x: 11.00003, y: -8}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -3309,6 +3354,16 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 8, y: -8, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 11, y: -8, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 3
@@ -3926,7 +3981,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 84
+  - m_RefCount: 85
     m_Data: {fileID: 11400000, guid: f3d93b8823172674294287ab22768566, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 0
@@ -3935,10 +3990,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 84
+  - m_RefCount: 85
     m_Data: {fileID: 5945357789820212794, guid: a0d3fbbc155eb404a87f827b40a48dfe, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 84
+  - m_RefCount: 85
     m_Data:
       e00: 1
       e01: 0
@@ -3957,7 +4012,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 84
+  - m_RefCount: 85
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -12356,3 +12411,4 @@ SceneRoots:
   - {fileID: 142899682}
   - {fileID: 586023459}
   - {fileID: 453188526}
+  - {fileID: 1185001474}
